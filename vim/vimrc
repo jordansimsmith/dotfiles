@@ -42,6 +42,8 @@ set encoding=utf-8
 
 " Tab size
 set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Golang support/ vim-go
 call plug#begin()
