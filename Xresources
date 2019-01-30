@@ -1,0 +1,78 @@
+Xft.dpi:       96
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.autohint:  false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+*background:                      #222D31
+*foreground:                      #d8d8d8
+*fading:                          8
+*fadeColor:                       black
+*cursorColor:                     #1ABB9B
+*pointerColorBackground:          #2B2C2B
+*pointerColorForeground:          #16A085
+
+!! black dark/light
+*color0:                          #000000
+*color8:                          #676767
+
+!! red dark/light
+*color1:                          #c91b00
+*color9:                          #ff6d67
+
+!! green dark/light
+*color2:                          #00c200
+*color10:                         #5ff967
+
+!! yellow dark/light
+*color3:                          #c7c400
+*color11:                         #fefb67
+
+!! blue dark/light
+*color4:                          #0225c7
+*color12:                         #6871ff
+
+!! magenta dark/light
+*color5:                          #c930c7
+*color13:                         #ff76ff
+
+!! cyan dark/light
+*color6:                          #00c5c7
+*color14:                         #5ffdff
+
+!! white dark/light
+*color7:                          #7c7c7c
+*color15:                         #feffff
+
+Xcursor.theme: xcursor-breeze
+Xcursor.size:                     0
+
+URxvt.font: xft:DejaVu Sans Mono
+
+URxvt.transparent: true
+URxvt.shading: 30
+URxvt.foreground: #eeeeee
+
+URxvt.depth:                      32
+URxvt.background:                 [100]#222D31
+URxvt*scrollBar:                  false
+URxvt*mouseWheelScrollPage:       false
+URxvt*cursorBlink:                true
+URxvt*background:                 black
+URxvt*foreground:                 grey
+URxvt*saveLines:                  5000
+
+URxvt.iso14755:                   false
+URxvt.keysym.Shift-Control-V:     eval:paste_clipboard
+URxvt.keysym.Shift-Control-C:     eval:selection_to_clipboard
+!Xterm escape codes, word by word movement
+URxvt.keysym.Control-Left:        \033[1;5D
+URxvt.keysym.Shift-Control-Left:  \033[1;6D
+URxvt.keysym.Control-Right:       \033[1;5C
+URxvt.keysym.Shift-Control-Right: \033[1;6C
+URxvt.keysym.Control-Up:          \033[1;5A
+URxvt.keysym.Shift-Control-Up:    \033[1;6A
+URxvt.keysym.Control-Down:        \033[1;5B
+URxvt.keysym.Shift-Control-Down:  \033[1;6B
