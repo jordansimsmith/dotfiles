@@ -16,3 +16,6 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install vim-go
 git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
+
+# Install vim-latex
+git clone https://github.com/vim-latex/vim-latex ~/.vim/plugged/vim-latex

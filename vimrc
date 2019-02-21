@@ -45,9 +45,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Golang support/ vim-go
+" Vim-plug plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'lervag/vimtex'
 call plug#end()
 
 let g:go_fmt_command = "goimports"
