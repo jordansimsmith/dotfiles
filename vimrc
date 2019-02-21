@@ -45,6 +45,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Line width
+set textwidth=79
+
 " Vim-plug plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
