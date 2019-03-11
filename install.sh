@@ -19,3 +19,6 @@ git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
 
 # Install vim-latex
 git clone https://github.com/vim-latex/vim-latex ~/.vim/plugged/vim-latex
+
+# Install vim-autopep8
+git clone https://github.com/tell-k/vim-autopep8 ~/.vim/plugged/vim-autopep8

@@ -52,6 +52,10 @@ set textwidth=79
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'lervag/vimtex'
+Plug 'tell-k/vim-autopep8'
 call plug#end()
 
 let g:go_fmt_command = "goimports"
+let g:autopep8_on_save = 1
+let g:autopep8_disable_show_diff = 1
+
