@@ -287,6 +287,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id xinput --set-prop "DLL07A7:01 044E:120B" "libinput Natural Scrolling Enabled" 1
 exec_always --no-startup-id setxkbmap -layout us -option caps:escape
+exec --no-startup-id xset r rate 200 25
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
