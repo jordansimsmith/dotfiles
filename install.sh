@@ -13,13 +13,3 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # Install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Install vim-go
-git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
-
-# Install vim-latex
-git clone https://github.com/vim-latex/vim-latex ~/.vim/plugged/vim-latex
-
-# Install vim-autopep8
-pip install --upgrade --user autopep8
-git clone https://github.com/tell-k/vim-autopep8 ~/.vim/plugged/vim-autopep8
