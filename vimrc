@@ -53,9 +53,15 @@ call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'lervag/vimtex'
 Plug 'tell-k/vim-autopep8'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'w0rp/ale'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
 
 let g:go_fmt_command = "goimports"
 let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff = 1
-
+let g:ale_lint_on_enter = 0
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.yaml,*.html Prettier
