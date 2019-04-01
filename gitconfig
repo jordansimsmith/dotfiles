@@ -3,3 +3,5 @@
 	name = Jordan Sim-Smith
 [core]
 	editor = vim
+[push]
+	default = simple
