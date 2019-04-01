@@ -48,6 +48,9 @@ set expandtab
 " Line width
 set textwidth=79
 
+" Dont assume comment after new line
+set formatoptions-=ro
+
 " Vim-plug plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
