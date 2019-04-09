@@ -1,0 +1,16 @@
+" Default font size
+set font "Deja Vu Sans Mono 12"
+
+" Font colours
+set completion-highlight-bg "#16A085"
+set statusbar-fg "#FFFFFF"
+set inputbar-fg "#16A085"
+
+" Smooth scrolling with touchpad
+set smooth-scroll true
+
+" Adjust to fit width on open
+set adjust-open width
+
+" Show ~ instead of full path
+set statusbar-home-tilde true
