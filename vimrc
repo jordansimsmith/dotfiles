@@ -68,3 +68,6 @@ let g:autopep8_disable_show_diff = 1
 let g:ale_lint_on_enter = 0
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.yaml,*.html Prettier
+
+" Auto resize buffers if window resizes
+autocmd VimResized * wincmd =
