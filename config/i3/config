@@ -289,6 +289,10 @@ exec_always --no-startup-id xinput --set-prop "DLL07A7:01 044E:120B" "libinput N
 exec_always --no-startup-id setxkbmap -layout us -option caps:escape
 exec --no-startup-id xset r rate 200 25
 
+# monitor arrangement
+exec --no-startup-id [ -f ~/.screenlayout/default.sh ] && source ~/.screenlayout/default.sh
+exec --no-startup-id nitrogen --restore
+
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
