@@ -1,0 +1,19 @@
+[Default Applications]
+x-scheme-handler/http=userapp-chromium.desktop
+x-scheme-handler/https=userapp-chromium.desktop
+x-scheme-handler/ftp=userapp-chromium.desktop
+x-scheme-handler/chrome=userapp-chromium.desktop
+text/html=userapp-chromium.desktop
+application/x-extension-htm=userapp-chromium.desktop
+application/x-extension-html=userapp-chromium.desktop
+application/x-extension-shtml=userapp-chromium.desktop
+application/xhtml+xml=chromium.desktop
+application/x-extension-xhtml=userapp-chromium.desktop
+application/x-extension-xht=userapp-chromium.desktop
+image/jpeg=viewnior.desktop;gpicview.desktop;
+image/png=viewnior.desktop;gpicview.desktop;
+text/plain=mousepad.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-DSB41Z.desktop
+message/rfc822=userapp-Thunderbird-DSB41Z.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/x-bittorrent=deluge.desktop
