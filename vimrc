@@ -4,20 +4,17 @@ set nocompatible
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" Turn on syntax highlighting
-syntax on
-
 " For plugins to load correctly
 filetype plugin indent on
+
+" Turn on syntax highlighting
+syntax on
 
 " Enable recursive search
 set path+=**
 
 " Display all matching files when we tab complete
 set wildmenu
-
-" Pick a leader key
-let mapleader = ","
 
 " Security
 set modelines=0
