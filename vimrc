@@ -48,6 +48,9 @@ set textwidth=79
 " Dont assume comment after new line
 set formatoptions-=ro
 
+" Mouse scroll
+set mouse=a
+
 " Vim-plug plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
