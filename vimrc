@@ -71,3 +71,6 @@ autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.yaml,*.html
 
 " Auto resize buffers if window resizes
 autocmd VimResized * wincmd =
+
+" Turn on spell checking for latex documents
+autocmd BufRead,BufNewFile *.tex setlocal spell
