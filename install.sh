@@ -30,7 +30,7 @@ sudo pip install autopep8 flake8
 sudo pacman -S texlive-most
 
 # Install zathura
-sudo pacman -S zathura
+sudo pacman -S zathura zathura-pdf-poppler
 
 # Install vifm
 sudo pacman -S vifm
