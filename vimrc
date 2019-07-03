@@ -12,6 +12,7 @@ syntax on
 
 " Enable recursive search
 set path+=**
+set wildignore+=**/node_modules/**
 
 " Display all matching files when we tab complete
 set wildmenu
