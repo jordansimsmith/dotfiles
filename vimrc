@@ -1,8 +1,7 @@
 " Remove VI compatability
 set nocompatible
 
-" Helps force plugins to load correctly when it is turned back on below
-filetype off
+" Helps force plugins to load correctly when it is turned back on below filetype off
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -61,6 +60,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'chr4/nginx.vim'
 call plug#end()
 
 let g:go_fmt_command = "goimports"
