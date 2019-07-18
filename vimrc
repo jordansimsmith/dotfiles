@@ -51,6 +51,9 @@ set formatoptions-=ro
 " Mouse scroll
 set mouse=a
 
+" Backspace behaviour
+set backspace=indent,eol,start
+
 " Vim-plug plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
