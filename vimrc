@@ -78,3 +78,6 @@ autocmd VimResized * wincmd =
 
 " Turn on spell checking for latex documents
 autocmd BufRead,BufNewFile *.tex setlocal spell
+
+" C formatting with artistic style
+autocmd BufWritePre *.c %!astyle --style=google -s2

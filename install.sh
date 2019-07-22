@@ -26,6 +26,9 @@ sudo pacman -S nodejs npm yarn
 # Install python tools
 sudo pip install autopep8 flake8
 
+# Install C/C++ tools
+sudo pacman -S astyle
+
 # Install latex
 sudo pacman -S texlive-most
 
