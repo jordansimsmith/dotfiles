@@ -1,7 +1,8 @@
 " Remove VI compatability
 set nocompatible
 
-" Helps force plugins to load correctly when it is turned back on below filetype off
+" Helps force plugins to load correctly when it is turned back on below
+filetype off
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -64,6 +65,7 @@ Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'chr4/nginx.vim'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 let g:go_fmt_command = "goimports"
@@ -79,5 +81,5 @@ autocmd VimResized * wincmd =
 " Turn on spell checking for latex documents
 autocmd BufRead,BufNewFile *.tex setlocal spell
 
-" C formatting with artistic style
-autocmd BufWritePre *.c %!astyle --style=google -s2 -xg -U -p -Y -S -H -xb -j
+" C formatting with clang-format
+autocmd FileType c ClangFormatAutoEnable
