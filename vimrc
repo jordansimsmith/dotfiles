@@ -80,4 +80,4 @@ autocmd VimResized * wincmd =
 autocmd BufRead,BufNewFile *.tex setlocal spell
 
 " C formatting with artistic style
-autocmd BufWritePre *.c %!astyle --style=google -s2 -xg -U -p -Y -S -H
+autocmd BufWritePre *.c %!astyle --style=google -s2 -xg -U -p -Y -S -H -xb -j
