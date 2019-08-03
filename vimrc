@@ -85,4 +85,4 @@ autocmd BufRead,BufNewFile *.tex setlocal spell
 autocmd FileType c ClangFormatAutoEnable
 
 " Tab size 4 for assembly files
-autocmd FileType asm setlocal tabstop=4 shiftwidth=4
+autocmd FileType asm setlocal tabstop=4 shiftwidth=4 expandtab
