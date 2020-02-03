@@ -43,9 +43,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Line width
-set textwidth=79
-
 " Dont assume comment after new line
 set formatoptions-=ro
 
@@ -80,6 +77,9 @@ autocmd VimResized * wincmd =
 
 " Turn on spell checking for latex documents
 autocmd BufRead,BufNewFile *.tex setlocal spell
+
+" Set max line lenth for latex documents
+autocmd BufRead,BufNewFile *.tex setlocal textwidth=80
 
 " C formatting with clang-format
 autocmd FileType c ClangFormatAutoEnable
