@@ -2,7 +2,8 @@
 
 # Link dotfiles to home directory
 ln -sf $(pwd)/vimrc ~/.vimrc
-ln -sf $(pwd)/coc.vim ~/.vim/coc.vim
+ln -sf $(pwd)/vim/coc.vim ~/.vim/coc.vim
+ln -sf $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
 ln -sf $(pwd)/zshrc ~/.zshrc
 ln -sf $(pwd)/Xresources ~/.Xresources
 ln -sf $(pwd)/config/i3/config ~/.config/i3/config
