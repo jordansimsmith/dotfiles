@@ -68,7 +68,7 @@ call plug#end()
 let g:go_fmt_command = "goimports"
 let g:autopep8_on_save = 1
 let g:autopep8_disable_show_diff = 1
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.yaml,*.html Prettier
 
