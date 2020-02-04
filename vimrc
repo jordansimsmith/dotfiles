@@ -38,6 +38,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
