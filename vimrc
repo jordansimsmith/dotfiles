@@ -41,6 +41,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -75,6 +76,9 @@ let g:go_fmt_command='goimports'
 " nerdtree
 let g:NERDTreeIgnore=['^node_modules$']
 nmap <C-n> :NERDTreeToggle<CR>
+
+" ctrlp ignores gitignored files
+let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " auto resize buffers if window resizes
 autocmd VimResized * wincmd =
