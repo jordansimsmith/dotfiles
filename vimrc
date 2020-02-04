@@ -36,6 +36,8 @@ set expandtab
 " load plugins with vim-plug
 call plug#begin('~/.vim/plugged')
 
+Plug 'scrooloose/nerdtree'
+Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -66,6 +68,10 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:go_def_mapping_enabled=0
 
 let g:go_fmt_command='goimports'
+
+" nerdtree
+let g:NERDTreeIgnore=['^node_modules$']
+nmap <C-n> :NERDTreeToggle<CR>
 
 " auto resize buffers if window resizes
 autocmd VimResized * wincmd =
