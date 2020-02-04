@@ -44,8 +44,27 @@ call plug#end()
 " coc.nvim recommended configuration
 source ~/.vim/coc.vim
 
+" coc-status
+set statusline^=%{coc#status()}
+
+" coc extensions
+let g:coc_global_extensions=[
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-yaml',
+  \ 'coc-python',
+  \ 'coc-pairs',
+  \ 'coc-eslint',
+  \ 'coc-prettier',
+  \ 'coc-texlab',
+  \ ]
+
+" prettier command for coc
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " let coc.nvim handle go to definition
 let g:go_def_mapping_enabled=0
+
 let g:go_fmt_command='goimports'
 
 " auto resize buffers if window resizes
