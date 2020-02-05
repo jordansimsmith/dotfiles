@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if (( $(id -u) == 0)); then
+  echo "Please do not run this as root."
+  exit 1
+fi
+
 # Link dotfiles to home directory
 ln -sf $(pwd)/vimrc ~/.vimrc
 ln -sf $(pwd)/vim/coc.vim ~/.vim/coc.vim
