@@ -42,6 +42,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -79,6 +80,9 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 " ctrlp ignores gitignored files
 let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" airline
+let g:airline_powerline_fonts=1
 
 " auto resize buffers if window resizes
 autocmd VimResized * wincmd =
