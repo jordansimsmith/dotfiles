@@ -36,6 +36,7 @@ set expandtab
 " load plugins with vim-plug
 call plug#begin('~/.vim/plugged')
 
+Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -75,6 +76,11 @@ let g:go_fmt_command='goimports'
 " nerdtree
 let g:NERDTreeIgnore=['^node_modules$']
 nmap <C-n> :NERDTreeToggle<CR>
+
+" nerdcommenter
+let g:NERDSpaceDelims=1
+nmap <C-_> <plug>NERDCommenterToggle
+vmap <C-_> <plug>NERDCommenterToggle
 
 " ctrlp ignores gitignored files
 let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
