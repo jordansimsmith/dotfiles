@@ -41,6 +41,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
@@ -50,9 +51,6 @@ call plug#end()
 
 " coc.nvim recommended configuration
 source ~/.vim/coc.vim
-
-" coc-status
-set statusline^=%{coc#status()}
 
 " coc extensions
 let g:coc_global_extensions=[
