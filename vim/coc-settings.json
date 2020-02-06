@@ -13,6 +13,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "prettier.singleQuote": true,
   "python.jediEnabled": false,
   "latex.build.onSave": true
 }
