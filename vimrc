@@ -57,6 +57,7 @@ source ~/.vim/coc.vim
 let g:coc_global_extensions=[
   \ 'coc-json',
   \ 'coc-tsserver',
+  \ 'coc-tslint-plugin',
   \ 'coc-yaml',
   \ 'coc-python',
   \ 'coc-pairs',
