@@ -67,6 +67,8 @@ let g:coc_global_extensions=[
   \ 'coc-texlab',
   \ ]
 
+highlight CocFloating ctermbg=Black
+
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
