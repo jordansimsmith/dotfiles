@@ -1,9 +1,13 @@
 #!/bin/bash
 
+# running as root changes home directory expansion
 if (( $(id -u) == 0)); then
   echo "Please do not run this as root."
   exit 1
 fi
+
+# Ensure folder structure
+mkdir -p ~/.config/{i3,zathura}
 
 # Link dotfiles to home directory
 ln -sf $(pwd)/vimrc ~/.vimrc
