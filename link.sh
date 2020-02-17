@@ -20,6 +20,5 @@ ln -sf $(pwd)/gitconfig ~/.gitconfig
 ln -sf $(pwd)/config/zathura/zathurarc ~/.config/zathura/zathurarc
 ln -sf $(pwd)/config/mimeapps.list ~/.config/mimeapps.list
 
-sudo ln -sf $(pwd)/fonts/DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete\ Mono.ttf \
-  /usr/share/fonts/TTF/DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete\ Mono.ttf 
+sudo ln -sf $(pwd)/fonts/ttf/* /usr/share/fonts/TTF
 sudo ln -sf $(pwd)/backgrounds/* /usr/share/backgrounds
