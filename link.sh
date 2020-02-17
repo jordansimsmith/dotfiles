@@ -22,3 +22,4 @@ ln -sf $(pwd)/config/mimeapps.list ~/.config/mimeapps.list
 
 sudo ln -sf $(pwd)/fonts/DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete\ Mono.ttf \
   /usr/share/fonts/TTF/DejaVu\ Sans\ Mono\ Nerd\ Font\ Complete\ Mono.ttf 
+sudo ln -sf $(pwd)/backgrounds/* /usr/share/backgrounds
