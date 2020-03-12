@@ -11,3 +11,6 @@ export PATH=$PATH:$GOBIN
 
 # yarn global bin
 export PATH=$PATH:$HOME/.yarn/bin/
+
+# config
+export XDG_CONFIG_HOME=$HOME/.config
