@@ -27,3 +27,4 @@ set move = no
 set editor = "vim"
 set charset = "utf-8"
 set record = ""
+set sort = "reverse-date"
