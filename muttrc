@@ -6,6 +6,8 @@ set envelope_from = yes
 # imap and smtp passwords from gpg
 source "gpg -d ~/.mutt/passwords.gpg |"
 
+source "~/.mutt/colours"
+
 # Ensure TLS is enforced
 set ssl_starttls = yes
 set ssl_force_tls = yes
