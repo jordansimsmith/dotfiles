@@ -11,8 +11,7 @@ mkdir -p ~/.config/{i3,zathura}
 
 # Link dotfiles to home directory
 ln -sf $(pwd)/vimrc ~/.vimrc
-ln -sf $(pwd)/vim/coc.vim ~/.vim/coc.vim
-ln -sf $(pwd)/vim/coc-settings.json ~/.vim/coc-settings.json
+ln -sf $(pwd)/vim/* ~/.vim
 ln -sf $(pwd)/zshrc ~/.zshrc
 ln -sf $(pwd)/Xresources ~/.Xresources
 ln -sf $(pwd)/profile ~/.profile
