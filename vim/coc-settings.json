@@ -12,7 +12,8 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "python"
+    "python",
+    "rust"
   ],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
