@@ -18,6 +18,7 @@ ln -sf $(pwd)/profile ~/.profile
 ln -sf $(pwd)/muttrc ~/.muttrc
 ln -sf $(pwd)/mutt/* ~/.mutt
 ln -sf $(pwd)/config/i3/config ~/.config/i3/config
+ln -sf $(pwd)/config/systemd/user/* ~/.config/systemd/user
 ln -sf $(pwd)/gitconfig ~/.gitconfig
 ln -sf $(pwd)/config/zathura/zathurarc ~/.config/zathura/zathurarc
 ln -sf $(pwd)/config/mimeapps.list ~/.config/mimeapps.list
