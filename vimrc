@@ -94,6 +94,7 @@ let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude
 
 " airline
 let g:airline_powerline_fonts=1
+let g:airline#extensions#coc#enabled=0
 
 " auto resize buffers if window resizes
 autocmd VimResized * wincmd =
