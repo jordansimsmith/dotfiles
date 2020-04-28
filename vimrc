@@ -50,6 +50,7 @@ Plug 'cespare/vim-toml'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
