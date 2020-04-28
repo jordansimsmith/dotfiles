@@ -14,8 +14,8 @@ set ruler
 " show partial command as it's being typed
 set showcmd
 
-" blink cursor instead of beeping
-set visualbell
+" no beeping or flashing
+set belloff=all
 
 " encoding
 set encoding=utf-8
