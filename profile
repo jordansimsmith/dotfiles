@@ -14,3 +14,6 @@ export PATH=$PATH:$HOME/.yarn/bin/
 
 # config
 export XDG_CONFIG_HOME=$HOME/.config
+
+# terminal
+export TERMINAL=st
