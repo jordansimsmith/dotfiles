@@ -67,6 +67,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   colored-man-pages
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
