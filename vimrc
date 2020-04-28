@@ -16,7 +16,6 @@ set showcmd
 
 " no beeping or flashing
 set belloff=all
-
 " encoding
 set encoding=utf-8
 
@@ -71,7 +70,9 @@ let g:coc_global_extensions=[
   \ 'coc-rust-analyzer',
   \ ]
 
-highlight CocFloating ctermbg=Black
+highlight CocFloating ctermbg=Gray
+
+colorscheme nord
 
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
