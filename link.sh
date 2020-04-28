@@ -13,6 +13,7 @@ mkdir -p ~/.config/{i3,i3status,zathura}
 ln -sf $(pwd)/vimrc ~/.vimrc
 ln -sf $(pwd)/vim/* ~/.vim
 ln -sf $(pwd)/zshrc ~/.zshrc
+ln -sf $(pwd)/dmenurc ~/.dmenurc
 ln -sf $(pwd)/Xresources ~/.Xresources
 ln -sf $(pwd)/profile ~/.profile
 ln -sf $(pwd)/muttrc ~/.muttrc
