@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Install yay
-sudo pacman -S yay
+# Update system
+sudo pacman -Syyu
 
-# Install zsh
-sudo pacman -S zsh
+# Install oh-my-zsh dependencies
+sudo pacman -S zsh curl git
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -17,32 +17,27 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Install golang
-sudo pacman -S go
-
-# Install node.js 
-sudo pacman -S nodejs npm yarn
-
-# Install python tools
-sudo pip install autopep8 flake8
-
-# Install C/C++ tools
-sudo pacman -S clang
-
-# Install latex
-sudo pacman -S texlive-most
-
-# Install zathura
-sudo pacman -S zathura zathura-pdf-poppler
-
-# Install vifm
-sudo pacman -S vifm
-
-# Install docker
-sudo pacman -S docker docker-compose
-
-# Install chrome
-sudo pacman -S chromium
-
-# Install other utilities
-sudo pacman -S zip unzip xclip ffmpeg cloc
+# Install packages
+packages=(
+  yay
+  go
+  nodejs
+  npm
+  yarn
+  python
+  python-pip
+  g++
+  texlive-most
+  zathura
+  zathura-pdf-poppler
+  docker
+  docker-compose
+  chromium
+  zip
+  unzip
+  xclip
+  cloc
+  wget
+  chromium
+)
+sudo pacman -S $packages
