@@ -39,5 +39,6 @@ packages=(
   cloc
   wget
   chromium
+  redshift
 )
 sudo pacman -S $packages
