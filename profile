@@ -16,4 +16,4 @@ export PATH=$PATH:$HOME/.yarn/bin/
 export XDG_CONFIG_HOME=$HOME/.config
 
 # terminal
-export TERMINAL=st
+export TERMINAL=alacritty
