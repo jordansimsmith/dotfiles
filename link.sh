@@ -16,8 +16,6 @@ ln -sf $(pwd)/zshrc ~/.zshrc
 ln -sf $(pwd)/dmenurc ~/.dmenurc
 ln -sf $(pwd)/Xresources ~/.Xresources
 ln -sf $(pwd)/profile ~/.profile
-ln -sf $(pwd)/muttrc ~/.muttrc
-ln -sf $(pwd)/mutt/* ~/.mutt
 ln -sf $(pwd)/config/i3/config ~/.config/i3/config
 ln -sf $(pwd)/config/i3status/config ~/.config/i3status/config
 ln -sf $(pwd)/config/systemd/user/* ~/.config/systemd/user
