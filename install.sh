@@ -40,5 +40,6 @@ packages=(
   wget
   chromium
   redshift
+  alacritty
 )
 sudo pacman -S $packages
