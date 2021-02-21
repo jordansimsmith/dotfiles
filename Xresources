@@ -6,45 +6,5 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-*background:                      #222D31
-*foreground:                      #d8d8d8
-*fading:                          8
-*fadeColor:                       black
-*cursorColor:                     #1ABB9B
-*pointerColorBackground:          #2B2C2B
-*pointerColorForeground:          #16A085
-
-!! black dark/light
-*color0:                          #000000
-*color8:                          #676767
-
-!! red dark/light
-*color1:                          #c91b00
-*color9:                          #ff6d67
-
-!! green dark/light
-*color2:                          #00c200
-*color10:                         #5ff967
-
-!! yellow dark/light
-*color3:                          #c7c400
-*color11:                         #fefb67
-
-!! blue dark/light
-*color4:                          #0225c7
-*color12:                         #6871ff
-
-!! magenta dark/light
-*color5:                          #c930c7
-*color13:                         #ff76ff
-
-!! cyan dark/light
-*color6:                          #00c5c7
-*color14:                         #5ffdff
-
-!! white dark/light
-*color7:                          #7c7c7c
-*color15:                         #feffff
-
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
