@@ -7,7 +7,7 @@ if (( $(id -u) == 0)); then
 fi
 
 # Ensure folder structure
-mkdir -p ~/.config/{i3,i3status,zathura,alacritty}
+mkdir -p ~/.config/{i3,i3status,zathura,alacritty,systemd}
 
 # Link dotfiles to home directory
 ln -sf $(pwd)/vimrc ~/.vimrc
