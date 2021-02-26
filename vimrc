@@ -67,7 +67,6 @@ let g:coc_global_extensions=[
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-texlab',
-  \ 'coc-rust-analyzer',
   \ ]
 
 highlight CocFloating ctermbg=Gray
