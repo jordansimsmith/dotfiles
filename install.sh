@@ -26,7 +26,6 @@ packages=(
   yarn
   python
   python-pip
-  g++
   texlive-most
   zathura
   zathura-pdf-poppler
