@@ -40,5 +40,6 @@ packages=(
   chromium
   redshift
   alacritty
+  arc-gtk-theme
 )
 sudo pacman -S $packages
