@@ -53,7 +53,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+F2 exec chromium
+bindsym $mod+F2 exec brave
 bindsym $mod+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+Shift+F3 exec pcmanfm
 bindsym $mod+F5 exec i3-sensible-terminal -e 'spt'
