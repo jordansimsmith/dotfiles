@@ -15,12 +15,11 @@ packages=(
   yarn
   python
   python-pip
-  texlive-most
   zathura
   zathura-pdf-poppler
   docker
   docker-compose
-  chromium
+  brave-browser
   zip
   unzip
   xclip
