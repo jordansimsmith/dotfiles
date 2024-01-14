@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -86,7 +86,7 @@
       EDITOR = "vim";
       VISUAL = "vim";
       SUDO_EDITOR = "vim";
-      TERM = "alacritty";
+      TERMINAL = "kitty";
       BROWSER = "brave";
     };
     home.packages = with pkgs; [
@@ -95,8 +95,10 @@
       neofetch
     ];
 
-    programs.alacritty = {
+    programs.kitty = {
       enable = true;
+      theme = "Nord";
+      shellIntegration.enableZshIntegration = true;
     };
 
     programs.zsh = {
@@ -130,6 +132,33 @@
       enable = true;
       userName = "Jordan Sim-Smith";
       userEmail = "jordansimsmith@gmail.com";
+    };
+
+    xsession.windowManager.i3 = {
+      enable = true;
+      config = {
+        modifier = "Mod4";
+        workspaceLayout = "default";
+        focus.followMouse = false;
+        window.hideEdgeBorders = "none";
+        gaps = {
+          smartBorders = "on";
+          smartGaps = true;
+          inner = 10;
+          outer = -2;
+        };
+        keybindings = let
+          modifier = "Mod4";
+        in
+        lib.mkOptionDefault {
+          "${modifier}+Return" = "exec --no-startup-id kitty";
+          "${modifier}+F2" = "exec brave";
+        };
+      };
+      extraConfig = ''
+        default_border pixel 0
+        default_floating_border pixel 0
+      '';
     };
   };
 
