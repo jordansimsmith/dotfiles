@@ -4,6 +4,24 @@
 
 { config, pkgs, lib, ... }:
 
+let
+  nord0 = "#2e3440";
+  nord1 = "#3b4252";
+  nord2 = "#434c5e";
+  nord3 = "#4c566a";
+  nord4 = "#d8dee9";
+  nord5 = "#e5e9f0";
+  nord6 = "#eceff4";
+  nord7 = "#8fbcbb";
+  nord8 = "#88c0d0";
+  nord9 = "#81a1c1";
+  nord10 = "#5e81ac";
+  nord11 = "#bf616a";
+  nord12 = "#d08770";
+  nord13 = "#ebcb8b";
+  nord14 = "#a3be8c";
+  nord15 = "#b48aed";
+in
 {
   imports =
     [
@@ -139,14 +157,94 @@
       config = {
         modifier = "Mod4";
         workspaceLayout = "default";
+        defaultWorkspace = "workspace number 1";
         focus.followMouse = false;
-        window.hideEdgeBorders = "none";
+        window = {
+          border = 2;
+          hideEdgeBorders = "none";
+        };
         gaps = {
           smartBorders = "on";
           smartGaps = true;
           inner = 10;
           outer = -2;
         };
+        colors = {
+          background = nord7;
+          focused = {
+            border = nord5;
+            background = nord5;
+            text = nord0;
+            indicator = nord8;
+            childBorder = nord9;
+          };
+          focusedInactive = {
+            border = nord1;
+            background = nord1;
+            text = nord5;
+            indicator = nord3;
+            childBorder = nord1;
+          };
+          unfocused = {
+            border = nord1;
+            background = nord0;
+            text = nord5;
+            indicator = nord1;
+            childBorder = nord1;
+          };
+          urgent = {
+            border = nord8;
+            background = nord8;
+            text = nord0;
+            indicator = nord8;
+            childBorder = nord8;
+          };
+          placeholder = {
+            border = nord0;
+            background = nord0;
+            text = nord5;
+            indicator = nord0;
+            childBorder = nord0;
+          };
+        };
+        bars = [
+          {
+            position = "top";
+            command = "i3bar";
+            statusCommand = "i3status";
+            trayPadding = 1;
+            colors = {
+              background = nord0;
+              separator = nord1;
+              statusline = nord4;
+              focusedWorkspace = {
+                border = nord5;
+                background = nord8;
+                text = nord0;
+              };
+              activeWorkspace = {
+                border = nord5;
+                background = nord3;
+                text = nord5;
+              };
+              inactiveWorkspace = {
+                border = nord3;
+                background = nord1;
+                text = nord5;
+              };
+              urgentWorkspace = {
+                border = nord8;
+                background = nord8;
+                text = nord0;
+              };
+              bindingMode = {
+                border = nord0;
+                background = nord9;
+                text = nord0;
+              };
+            };
+          }
+        ];
         keybindings = let
           modifier = "Mod4";
         in
@@ -156,8 +254,6 @@
         };
       };
       extraConfig = ''
-        default_border pixel 0
-        default_floating_border pixel 0
       '';
     };
   };
@@ -200,5 +296,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
-
 }
