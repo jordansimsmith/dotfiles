@@ -256,6 +256,17 @@ in
       extraConfig = ''
       '';
     };
+
+    programs.i3status = {
+      enable = true;
+      general = {
+        colors = true;
+        color_good = nord14;
+        color_degraded = nord12;
+        color_bad = nord11;
+        interval = 1;
+      };
+    };
   };
 
   # Allow unfree packages
