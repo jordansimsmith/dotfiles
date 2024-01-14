@@ -123,6 +123,18 @@ in
       enable = true;
       enableAutosuggestions = true;
       syntaxHighlighting.enable = true;
+      shellAliases = {
+        gco = "git checkout";
+        gbc = "git checkout -b";
+        gfm = "git pull";
+        gc = "git commit --verbose";
+        gia = "git add";
+        gp = "git push";
+        gpf = "git push --force-with-lease";
+        gws = "git status --short";
+        gwd = "git diff --no-ext-diff";
+        gwR = "git reset --hard";
+      };
     };
 
     programs.neovim = {
