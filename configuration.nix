@@ -83,7 +83,6 @@ in
       extraPackages = with pkgs; [
         i3status
         i3lock
-        dmenu
       ];
     };
   };
@@ -135,6 +134,10 @@ in
         gwd = "git diff --no-ext-diff";
         gwR = "git reset --hard";
       };
+    };
+
+    programs.rofi = {
+      enable = true;
     };
 
     programs.neovim = {
@@ -262,7 +265,9 @@ in
         in
         lib.mkOptionDefault {
           "${modifier}+Return" = "exec --no-startup-id kitty";
+          "${modifier}+d" = "exec rofi -show drun";
           "${modifier}+F2" = "exec brave";
+          "${modifier}+Shift+l" = "exec i3lock --no-unlock-indicator --color ${builtins.substring 1 6 nord0}";
         };
       };
       extraConfig = ''
