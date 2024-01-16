@@ -110,6 +110,7 @@ in
       brave
       ranger
       neofetch
+      feh
     ];
 
     programs.kitty = {
@@ -184,6 +185,13 @@ in
           inner = 10;
           outer = -2;
         };
+        startup = [
+          {
+            command = "${pkgs.feh}/bin/feh --bg-fill ${./backgrounds/clouds.jpg}";
+            always = true;
+            notification = false;
+          }
+        ];
         colors = {
           background = nord7;
           focused = {
@@ -271,6 +279,8 @@ in
         };
       };
       extraConfig = ''
+        default_border pixel 2
+        default_floating_border pixel 2
       '';
     };
 
