@@ -21,6 +21,20 @@ let
   nord13 = "#ebcb8b";
   nord14 = "#a3be8c";
   nord15 = "#b48aed";
+
+  nordic-gtk-theme = pkgs.stdenv.mkDerivation rec {
+    name = "nordic-gtk-theme";
+    version = "2.2.0";
+    src = pkgs.fetchzip {
+      url = "https://github.com/EliverLara/Nordic/releases/download/v${version}/Nordic-bluish-accent.tar.xz";
+      hash = "sha256-TzxPuVymdzwPiHlYq34pW6vzNgeyD+qY4SOwVzmv70Y=";
+    };
+
+    installPhase = ''
+      mkdir -p $out/share/themes
+      cp -r $src $out/share/themes/nordic
+    '';
+  };
 in
 {
   imports =
@@ -113,6 +127,14 @@ in
       feh
     ];
 
+    gtk = {
+      enable = true;
+      theme = {
+        name = "nordic";
+        package = nordic-gtk-theme;
+      };
+    };
+
     programs.kitty = {
       enable = true;
       theme = "Nord";
@@ -196,7 +218,7 @@ in
           background = nord7;
           focused = {
             border = nord5;
-            background = nord5;
+            background = nord9;
             text = nord0;
             indicator = nord8;
             childBorder = nord9;
@@ -302,11 +324,10 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  # vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
   ];
 
   programs.zsh.enable = true;
+  programs.dconf.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
